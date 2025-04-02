@@ -1,0 +1,69 @@
+# Exercícios práticos de HTML
+
+## 1 - Criando uma página simples
+- Crie um arquivo .html e adicione:
+    - Um título <h1>
+    - Dois parágrafos com <p>
+    - Um rodapé com <footer>
+
+## 2 - Crie uma lista ordenada e uma não ordenada ☕
+    - Uma lista não ordenada com os itens necessários para preparar um café
+    - Uma lista ordenada com os passos para preparar um café 
+    Importante: Utilize as demais tags para incluir título e deixar a página amigável
+
+## 3 - Linkando páginas
+    - Faça uma página inicial de uma empresa que contenha uma navegação <nav> com link para informações da empresa "sobre"
+        - Crie um arquivo index.html e um arquivo sobre.html
+        - A página index.html deve conter uma tag <a> para sobre.html
+        - A página sobre.html deve conter uma tag <a> de volta para o index.html
+    Importante: Utilize as demais tags para incluir título e deixar a página amigável
+
+## 4 - Adicionando imagem
+    - Aprenda a usar a tag <img>
+        - Adicione uma imagem qualquer em uma das páginas html já criadas
+        - Utilize os atributor src e alt corretamente
+    Dica: O site https://www.pexels.com/pt-br/ é um banco de imagens gratuítas bem legais para construção de páginas
+
+## 5 - Tabela simples
+    - Crie uma tabela com as colunas: Nome / Idade / Cidade / Profissão
+    - Popule a tabela com pelos menos 5 dados fictícios
+
+## 6 - Tabela intermediária
+   - Crie uma tabela representando uma agenda de eventos da semana
+        - Cabeçalhos para os dias da semana (segunda a sexta).
+        - Três colunas: Horário, Evento, Local.
+        - Alguns eventos ocupam mais de um dia (usar colspan).
+        - Alguns horários possuem várias atividades ao mesmo tempo (usar rowspan).
+    Dica: Use emojis para destacar os eventos
+
+## 7 - Formulário básico
+    - Crie um formulário básico com campos de entrada
+        - O formulário deve conter os campos Nome / Email / Idade / Data de Nascimento / Profissão / Endereço (com os campos separados) / Um campo <select> para selecionar o tipo de acesso (Usuário / Administrador local / Administrador) / Usuário / Senha
+        - Organize corretamente o atributo for da label com o atributo name do input
+        - Inclua um <button> de envio ao final do formulário
+
+## 8 - Formulário intermediário
+    - A partir do formulário anterior criado adicione:
+        - Os atributos type corretamente (permitindo string / number / Date e tornando a senha oculta)
+        - Adicione validações como required, minlength, maxlength, pattern
+        - Adicione um botão de Limpa que zere todos os compos preenchidos do formulário
+
+## 9 - Criando uma Página de Notícias Responsiva 
+    - Crie uma página de notícias com estrutura semântica usando:
+        <header> com o nome do site e um menu de navegação
+        <main> contendo múltiplos <article>, cada um representando uma notícia
+        Dentro de cada <article>, inclua <h2>, <p>, <img> e <footer> com o nome do autor e data
+        Um <aside> exibindo links para notícias relacionadas
+        Um <section> dentro do <article> para destacar partes importantes da notícia
+    O layout deve ser responsivo, usando a tag <meta name="viewport">
+    Dica: Estruture bem os elementos para facilitar a estilização futura
+
+## 10 - Criando um Portfólio Simples 
+    - Crie uma página HTML para um portfólio pessoal contendo:
+        <header> com nome e uma breve introdução.
+        <nav> com links para as seções "Sobre Mim", "Projetos" e "Contato"
+        <section> "Sobre Mim" com uma foto e um breve texto
+        <section> "Projetos" contendo pelo menos três <article>, cada um com título, imagem e descrição do projeto
+        <section> "Contato" com um <form> contendo campos para nome, e-mail, mensagem e um botão de envio
+        <footer> com redes sociais e direitos autorais
+    Dica: Estruture bem os elementos para facilitar a estilização futura
