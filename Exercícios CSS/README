@@ -1,0 +1,56 @@
+## Exercícios — Display, Position e Z-index (HTML + CSS)
+
+### Exercício 1 — Explorando `display: inline`, `block` e `inline-block`
+
+**Objetivo:** Identificar e aplicar diferentes tipos de display padrão e forçado.
+
+1. Crie três botões usando `<button>`, três `<div>` e três `<span>`.
+2. Aplique bordas e cores de fundo distintas para cada grupo.
+3. Modifique o `display` de cada elemento para:
+   - `<div>` com `display: inline`
+   - `<span>` com `display: block`
+   - `<button>` com `display: inline-block`
+4. Observe o comportamento.
+
+---
+
+### Exercício 2 — Caixas Absolutas
+
+**Objetivo:** Usar `position: relative` e `absolute`.
+
+1. Crie uma `<div>` com `position: relative`, tamanho fixo e cor de fundo.
+2. Dentro dela, crie duas caixas pequenas com `position: absolute`.
+3. Posicione uma no canto superior esquerdo e outra no inferior direito usando `top`, `bottom`, `left`, `right`.
+
+---
+
+### Exercício 3 — Caixa Fixa no Topo
+
+**Objetivo:** Entender `position: fixed` e o efeito de rolagem.
+
+1. Crie uma `<header>` com um menu de navegação.
+2. Aplique `position: fixed` no header e adicione `top: 0` e `width: 100%`.
+3. Crie bastante conteúdo abaixo (use `<p>` com `lorem`) para forçar a rolagem.
+4. Teste se o menu continua fixo.
+
+---
+
+### Exercício 4 — Sticky Header de Seção
+
+**Objetivo:** Usar `position: sticky` para destacar seções longas.
+
+1. Crie uma `<section>` com um `<h2>` dentro.
+2. Aplique `position: sticky` no `<h2>` com `top: 0`.
+3. Adicione vários parágrafos com texto simulado dentro da seção.
+4. Observe como o título da seção "gruda" no topo da área visível ao rolar.
+
+---
+
+### Exercício 5 — Baralho com `z-index`
+
+**Objetivo:** Usar `z-index` para sobreposição de elementos.
+
+1. Crie uma `div` com `position: relative`.
+2. Dentro dela, adicione 4 "cartas" (divs com tamanho igual e bordas).
+3. Use `position: absolute` e `z-index` diferentes para cada carta.
+4. Faça com que elas se sobreponham de forma intencional (como num baralho).
