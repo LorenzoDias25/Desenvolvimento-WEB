@@ -1,0 +1,47 @@
+body {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.container{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: rosybrown;
+  border: 4px solid black;
+}
+.head {
+  display: inline-block;
+  background-color: goldenrod;
+  width: 600px;
+  padding: 0px ;
+  margin-bottom: 40px ;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+}
+
+div {
+  display: inline;
+  background-color: aqua;
+  border: 4px solid black;
+  padding-right: 60px;
+  padding-top: 20px;
+  margin: 10px;
+}
+
+span{
+  display: block;
+  background-color: salmon;
+  height: 30px;
+  border: 4px solid black;
+  margin-bottom: 5px;
+}
+
+button{
+  display: inline-block;
+  background-color: chocolate;
+  padding: 15px;
+  margin-left: 5px;
+  border: 4px solid black;
+}
