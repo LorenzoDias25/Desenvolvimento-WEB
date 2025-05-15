@@ -34,6 +34,33 @@
             padding: 30px 0;
             margin-top: 50px;
         }
+        .product-card {
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .carousel-item {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+        .newsletter-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +101,44 @@
         </div>
     </nav>
 
+    <!-- Carrossel de Ofertas -->
+    <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                    <h3>Black Friday Antecipada</h3>
+                    <p>Até 60% OFF em teclados mecânicos</p>
+                    <a href="#" class="btn btn-danger">Aproveite a Oferta</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                    <h3>Novos Mouses Gamer</h3>
+                    <p>25% OFF na primeira compra</p>
+                    <a href="#" class="btn btn-primary">Compre Agora</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80')">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                    <h3>Frete Grátis</h3>
+                    <p>Para compras acima de R$ 300 em todo o site</p>
+                    <a href="#" class="btn btn-success">Ver Produtos</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
     <!-- Seção Hero -->
     <section class="hero-section">
         <div class="container">
@@ -110,8 +175,80 @@
         </div>
     </section>
 
-    <!-- Categorias -->
+    <!-- Produtos em Destaque -->
     <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Produtos em Destaque</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <span class="discount-badge">-20%</span>
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80" class="card-img-top" alt="Teclado Mecânico">
+                        <div class="card-body">
+                            <h5 class="card-title">Teclado Mecânico RGB</h5>
+                            <p class="text-muted">Marca X</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-danger fw-bold">R$ 299,90</span>
+                                    <small class="text-decoration-line-through text-muted ms-2">R$ 379,90</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1928&q=80" class="card-img-top" alt="Mouse Gamer">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse Gamer Pro</h5>
+                            <p class="text-muted">Marca Y</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">R$ 199,90</span>
+                                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <span class="discount-badge">-15%</span>
+                        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top" alt="Headset Gamer">
+                        <div class="card-body">
+                            <h5 class="card-title">Headset Gamer 7.1</h5>
+                            <p class="text-muted">Marca Z</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-danger fw-bold">R$ 349,90</span>
+                                    <small class="text-decoration-line-through text-muted ms-2">R$ 419,90</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80" class="card-img-top" alt="Monitor Curvo">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitor Curvo 27"</h5>
+                            <p class="text-muted">Marca W</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">R$ 1.799,90</span>
+                                <button class="btn btn-sm btn-outline-primary"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="py-5">
         <div class="container text-center">
             <h2 class="mb-5">Nossas Categorias</h2>
             <div class="row g-4">
@@ -164,8 +301,33 @@
                     </a>
                 </div>
             </div>
-            <div class="mt-5">
-                <a href="#" class="btn btn-primary btn-lg">Ver Todos os Produtos</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Receba Ofertas Exclusivas</h2>
+                    <p class="mb-4">Assine nossa newsletter e seja o primeiro a saber sobre lançamentos e promoções especiais!</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Seu melhor e-mail">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Assinar</button>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="newsletterCheck">
+                                <label class="form-check-label small text-muted" for="newsletterCheck">
+                                    Concordo em receber comunicações da TECH GEAR
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
