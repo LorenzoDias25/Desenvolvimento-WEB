@@ -1,70 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estúdio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="container">
-    <header><h2>Estudio fotografico</h2></header>
-    <nav>
-      <a>Estudio</a>
-      <a>Portifolio</a>
-      <a>Testemunhos</a>
-      <a>Contato</a>
-    </nav>
-    <section class="secgrid">
-      <div class="itemsec"><img src="teste2.jpg" /></div>
-      <div class="itemsec"><img src="teste2.jpg" /></div>
-    </section>
-    <section class="sectext">
-      <div class="itemtext">
-        <h1>O Estudio</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-          libero dolorem, itaque praesentium totam, quae laboriosam nobis
-          corrupti autem ipsum eos vero commodi esse magnam dolorum quo officia
-          error eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Doloremque eius iusto quasi nesciunt nemo quae laboriosam a, illo
-          recusandae maiores quod reiciendis distinctio earum. Adipisci delectus
-          explicabo nulla magnam ipsam! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Eius quo consequatur tempore praesentium laudantium
-          soluta! Praesentium, reiciendis accusantium ducimus necessitatibus
-          laborum nesciunt consectetur debitis quisquam enim minus, distinctio
-          voluptas quae.
-        </p>
-      </div>
-    </section>
-    <section class="secboxs">
-      <div class="boxs"><img src="teste2.jpg" /></div>
-      <div class="boxs"><img src="teste2.jpg" /></div>
-      <div class="boxs"><img src="teste2.jpg" /></div>
-      <div class="boxs"><img src="teste2.jpg" /></div>
-    </section>
-    <section class="sectext">
-      <div class="itemtext">
-        <h1>Portifolio</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde maxime
-          possimus atque placeat nesciunt id impedit sint. Cumque dicta sequi
-          saepe, ipsum exercitationem officia eius, neque id maiores similique
-          debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Exercitationem, quibusdam necessitatibus fuga nemo rem repudiandae in
-          eos, sed et laudantium libero! Suscipit dolor, dolore reiciendis
-          architecto fugit officiis quo ratione!
-        </p>
-      </div>
-    </section>
-    <section class="secboxs" style="flex-wrap: wrap; gap: 10px; justify-content: space-between;">
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-        <div class="boxs"><img src="teste2.jpg" /></div>
-    </section>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estúdio Fotográfico</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Hero banner -->
+  <header class="hero">
+    <h1>Estúdio Fotográfico</h1>
+  </header>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#estudio">Estúdio</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#testemunhos">Testemunhos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Destaques -->
+  <section class="destaques">
+    <div class="box"><a href="#estudio">ESTÚDIO</a></div>
+    <div class="box"><a href="#portfolio">PORTFÓLIO</a></div>
+  </section>
+
+  <!-- Seção Estúdio -->
+  <section id="estudio" class="container">
+    <h2>O Estúdio</h2>
+    <p>Nosso estúdio oferece um ambiente moderno e acolhedor, equipado com tecnologia de ponta para garantir a melhor experiência fotográfica. Aqui, criatividade e técnica se unem para capturar momentos únicos e expressões autênticas.</p>
+    <div class="galeria-estudio">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80
+" alt="">
+    </div>
+  </section>
+
+  <!-- Seção Portfólio -->
+  <section id="portfolio" class="container">
+  <h2>Portfólio</h2>
+  <p>Nosso portfólio reúne os melhores trabalhos realizados nos últimos anos, destacando a versatilidade e sensibilidade em capturar cada detalhe. Dos retratos em estúdio às fotografias externas, buscamos sempre contar histórias únicas por meio da imagem.</p>
+
+  <button class="ano">2019</button>
+  <div class="grid-custom">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="quadrada"  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="retrato"   src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="quadrada"  src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="retrato"   src="https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+
+  <button class="ano">2018</button>
+  <div class="grid-custom">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="quadrada"  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="retrato"   src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="quadrada"  src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="retrato"   src="https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="paisagem" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="">
+    <img class="quadrada"  src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="">
+  </div>
+</section>
+
+  <!-- Seção Testemunhos -->
+ <section id="testemunhos" class="container">
+  <h2>Testemunhos</h2>
+
+  <!-- Amanda (imagem à esquerda - padrão) -->
+  <div class="testemunho">
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Amanda Ribeiro">
+    <div>
+      <p>"Uma experiência inesquecível. A sessão foi leve e divertida!"</p>
+      <small>— Amanda Ribeiro</small>
+    </div>
+  </div>
+
+  <!-- Lucas (imagem à direita) -->
+  <div class="testemunho right">
+    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Lucas Ferreira">
+    <div>
+      <p>"Profissionalismo e sensibilidade em cada clique. Recomendo muito!"</p>
+      <small>— Lucas Ferreira</small>
+    </div>
+  </div>
+
+  <!-- Camila (imagem à esquerda - padrão) -->
+  <div class="testemunho">
+    <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Camila Dias">
+    <div>
+      <p>"As fotos capturaram minha essência. Resultado impecável."</p>
+      <small>— Camila Dias</small>
+    </div>
+  </div>
+
+  <!-- Renato (imagem à direita) -->
+  <div class="testemunho right">
+    <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Renato Costa">
+    <div>
+      <p>"Trabalho incrível e criativo. Voltarei com certeza para novos projetos."</p>
+      <small>— Renato Costa</small>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Seção Contato -->
+  <section id="contato" class="container">
+  <h2>Contato</h2>
+  <form id="form-contato">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" placeholder="Digite seu nome" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('form-contato');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Mensagem enviada com sucesso');
+    form.reset();
+  });
+</script>
+
+</body>
 </html>
