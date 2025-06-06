@@ -2,13 +2,34 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Exercicio Array 1 JS</title>
+    <title>Tarefa JS</title>
   </head>
   <body>
     <h1>Tarefa JS</h1>
 
-    <button>Botão</button>
-    <h2>Data: </h2>
-    <script src="app.js" defer></script>
+    <h2>Formulário</h2>
+    <form>
+      <fieldset>
+        <fieldset>
+          <label>Nome:</label> <input id="formNome" type="text" />
+          <br />
+          <label>E-mail:</label> <input id="formEmail" type="text" />
+          <br />
+          <label>Mensagem:</label><input id="formMsg" type="text" />
+        </fieldset>
+        <br>
+        <button id="enviar" type="reset">Enviar</button>
+        <button id="limpar" type="reset">Limpar</button>
+      </fieldset>
+    </form>
+    <div style="visibility: hidden;">
+      <h2>Resultado</h2>
+      <fieldset>
+        <h3 id="nome"></h3>
+        <h3 id="email"></h3>
+        <h3 id="msg"></h3>
+      </fieldset>
+    </div>
   </body>
+  <script src="app.js" defer></script>
 </html>
