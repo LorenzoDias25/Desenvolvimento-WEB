@@ -1,0 +1,20 @@
+.product-card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.card-price {
+  font-weight: bold;
+  color: green;
+}
+
+.added-message {
+  margin-top: 10px;
+  color: blue;
+  font-weight: bold;
+  display: none;
+}
