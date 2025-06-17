@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Loja Virtual</h1>
+    <div class="row" id="product-list">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card product-card" onclick="addToCart(this)">
+          <img src="https://images.pexels.com/photos/2582932/pexels-photo-2582932.jpeg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">Uma descrição breve do produto 1.</p>
+            <p class="card-price">R$ 49,99</p>
+            <div class="added-message"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card product-card" onclick="addToCart(this)">
+          <img src="https://images.pexels.com/photos/2225616/pexels-photo-2225616.jpeg" class="card-img-top" alt="Produto 2">
+          <div class="card-body">
+            <h5 class="card-title">Produto 2</h5>
+            <p class="card-text">Uma descrição breve do produto 2.</p>
+            <p class="card-price">R$ 79,90</p>
+            <div class="added-message"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card product-card" onclick="addToCart(this)">
+          <img src="https://images.pexels.com/photos/159235/computer-technology-pc-electronics-159235.jpeg" class="card-img-top" alt="Produto 3">
+          <div class="card-body">
+            <h5 class="card-title">Produto 3</h5>
+            <p class="card-text">Uma descrição breve do produto 3.</p>
+            <p class="card-price">R$ 129,90</p>
+            <div class="added-message"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
